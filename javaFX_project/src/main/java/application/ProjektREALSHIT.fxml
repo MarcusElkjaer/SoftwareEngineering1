@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HelloController">
+    <children>
+        <VBox layoutY="-2.0" prefHeight="407.0" prefWidth="184.0" style="-fx-background-color: #6666FF;">
+            <children>
+                <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="183.0" stylesheets="@style.css" text="Projekt">
+                    <VBox.margin>
+                        <Insets top="130.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets right="50.0" />
+                    </padding></Button>
+                <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="183.0" stylesheets="@style.css" text="Aktiviteter">
+                    <padding>
+                        <Insets right="35.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="183.0" stylesheets="@style.css" text="Medarbejdere">
+                    <padding>
+                        <Insets right="15.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="183.0" stylesheets="@style.css" text="Tidsregistrering">
+                    <padding>
+                        <Insets right="5.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+        <VBox layoutX="192.0" layoutY="145.0" prefHeight="251.0" prefWidth="399.0">
+            <children>
+                <TableView prefHeight="274.0" prefWidth="427.0">
+                    <columns>
+                        <TableColumn prefWidth="32.0" style="-fx-background-color: #6666FF;" text="Nr" />
+                        <TableColumn prefWidth="56.0" style="-fx-background-color: #6666FF;" text="Navn" />
+                        <TableColumn prefWidth="101.0" style="-fx-background-color: #6666FF;" text="Budgeteret tid" />
+                        <TableColumn prefWidth="84.0" style="-fx-background-color: #6666FF;" text="Leder" />
+                        <TableColumn prefWidth="125.0" style="-fx-background-color: #6666FF;" text="Antal medarbejdere" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+        <Button layoutX="192.0" layoutY="67.0" mnemonicParsing="false" text="Nyt Projekt" />
+    </children>
+</AnchorPane>
