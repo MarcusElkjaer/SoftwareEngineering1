@@ -11,4 +11,12 @@ Feature: create project
     And the project gets given a project id.
 
 
+    Scenario: A project is created with a name "Project1" succesfully with a start and end date
+      Given that the company get a project with the name "Project1".
+      And the project gets given a project startdate and enddate
+      And the project gets given a project id.
+      Then the project "Project1" is created successfully.
+
+
+
 

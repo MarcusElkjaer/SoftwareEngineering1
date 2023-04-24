@@ -8,8 +8,10 @@ public class Project {
     private String projectName;
     private Employee projectLeader;
     private int id;
-    private GregorianCalendar startDate = new GregorianCalendar(1000, 0, 1);
+
+
     List<Activity> activities = new ArrayList<>();
+
 
 
     public Project(String projectName, int id){
@@ -40,7 +42,6 @@ public class Project {
     public List<Activity> getActivities() {
         return activities;
     }
-
 
 
 }
