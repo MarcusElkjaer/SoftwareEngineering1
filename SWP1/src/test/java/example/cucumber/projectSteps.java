@@ -1,6 +1,7 @@
 package example.cucumber;
 
 import domain.Project;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -34,12 +35,17 @@ public void aProjectWithTheNameIsCreatedSuccessfully(String projectName) {
 @Then("the project gets given a project id.")
 public void theProjectGetsGivenAProjectId() {
 	assert project.getId() > 0;
-
 }
-
-
 public int generateID() {
 	return 110232;
 }
 
+	@And("the project gets given a project startdate and enddate")
+	public void theProjectGetsGivenAProjectStartdateAndEnddate() {
+
+	}
+
+	@Then("the project {string} is created successfully.")
+	public void theProjectIsCreatedSuccessfully(String arg0) {
+	}
 }

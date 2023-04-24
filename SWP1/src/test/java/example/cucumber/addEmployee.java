@@ -4,9 +4,7 @@ import domain.Employee;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
-import java.util.ArrayList;
-
-import application.projectApp;
+import app.projectApp;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
