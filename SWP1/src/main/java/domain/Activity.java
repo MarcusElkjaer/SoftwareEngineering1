@@ -11,13 +11,25 @@ public class Activity {
     private int endWeek;
     private int timeBudget;
 
-    public Activity(String name, Employee projectLeader, ArrayList<Employee> employees, int startWeek, int endWeek, int timeBudget){
+    // You initialize an activity only by its name. Everything else will be set or added afterwards.
+    public Activity(String name){
         this.name = name;
+    }
+
+    public void setProjectLeader(Employee projectLeader){
         this.projectLeader = projectLeader;
-        this.employees = employees;
-        this.startWeek = startWeek;
-        this.endWeek = endWeek;
-        this.timeBudget = timeBudget;
+    }
+    public void addEmployee(Employee employee){
+        employees.add(employee);
+    }
+    public void setStartWeek(int sw){
+        startWeek = sw;
+    }
+    public void setEndWeek(int ew){
+        endWeek = ew;
+    }
+    public void setTimeBudget(int tb){
+        timeBudget = tb;
     }
 
     public String getName(){return name;}
