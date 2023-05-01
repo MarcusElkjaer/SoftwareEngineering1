@@ -1,6 +1,7 @@
-package application;
+package app;
 
 import app.OperationNotAllowedException;
+import domain.Activity;
 import domain.Employee;
 import domain.Project;
 
@@ -11,6 +12,8 @@ public class ProjectApp extends Observable {
 
     private boolean adminLoggedIn = false;
     ArrayList<Employee> employeeArrayList = new ArrayList<Employee>();
+
+    public int projectCount;
     ArrayList<Project> projectList = new ArrayList<Project>();
 
     ////// Admin things //////
@@ -67,9 +70,15 @@ public class ProjectApp extends Observable {
     }
 
     ////// Project things /////
+
+    public void createProject (String projectName){;
+        projectList.add(new Project(projectName, projectCount));
+        projectCount++;
+    }
     public void addProject(Project project){
         projectList.add(project);
     }
+
 
 
 }

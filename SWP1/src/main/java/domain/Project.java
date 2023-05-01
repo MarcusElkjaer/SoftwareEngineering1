@@ -9,7 +9,7 @@ public class Project {
     private Employee projectLeader;
     private int id;
     private GregorianCalendar startDate = new GregorianCalendar(1000, 0, 1);
-    List<Activity> activities = new ArrayList<>();
+    List<Activity> activityList = new ArrayList<>();
 
 
     public Project(String projectName, int id){
@@ -37,8 +37,10 @@ public class Project {
         this.projectLeader = employee;
     }
 
-    public List<Activity> getActivities() {
-        return activities;
+    public void addActivity(Activity activity) { activityList.add(activity); }
+
+    public List<Activity> getActivityList() {
+        return activityList;
     }
 
 

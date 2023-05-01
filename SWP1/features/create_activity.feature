@@ -8,7 +8,7 @@ Background: The app has a list of projects
   Given that the admin is logged in
   And these projects are contained in the library
     | Test Project |
-  And the admin leader logs out
+  And the admin logs out
 
 Scenario: An activity is created with the name "Test activity" successfully
   Given that a project with the name "Test project" exists.
