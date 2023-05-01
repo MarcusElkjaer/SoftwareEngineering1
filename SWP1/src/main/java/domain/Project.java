@@ -18,6 +18,7 @@ public class Project {
     public Project(String projectName, int id){
         this.projectName = projectName;
         this.id = id;
+        this.employees = new ArrayList<>();
     }
 
     public String getProjectName() {
