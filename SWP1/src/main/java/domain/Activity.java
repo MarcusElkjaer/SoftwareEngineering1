@@ -27,4 +27,9 @@ public class Activity {
     public int getEndWeek(){return endWeek;}
     public int getTimeBudget(){return timeBudget;}
     public int getTimePeriod(){return endWeek - startWeek;}
+
+    public void addEmployee(Employee employee) {
+            employees.add(employee);
+            employee.assignActivity(this);
+    }
 }

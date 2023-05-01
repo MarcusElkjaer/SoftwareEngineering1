@@ -9,6 +9,7 @@ public class Project {
     private Employee projectLeader;
     private int id;
 
+    private ArrayList<Employee> employees;
 
     List<Activity> activities = new ArrayList<>();
 
@@ -43,5 +44,13 @@ public class Project {
         return activities;
     }
 
-
+    public void addEmployee(Employee employee) {
+        employees.add(employee);
+    }
+    public ArrayList<Employee> getEmployees() {
+        return employees;
+    }
+    public Employee getProjectLeader() {
+        return projectLeader;
+    }
 }

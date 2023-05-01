@@ -7,10 +7,13 @@ public class Employee {
     private int age;
     private String initials;
 
+    private int activitiesCount;
+
     public Employee(String name,int age, String initials){
             this.name = name;
             this.age = age;
             this.initials = initials;
+            this.activitiesCount = 0;
     }
 
     public String getName() {
@@ -25,7 +28,9 @@ public class Employee {
      return initials;
     }
 
-
+    public int getAssignedActivities() {
+        return activitiesCount;
+    }
     public boolean checkAge(){
         if (age >=70){
             return false;
@@ -41,10 +46,8 @@ public class Employee {
             }
             return true;
     }
-
-
-
-
-
+    public void assignActivity(Activity activity) {
+        this.activitiesCount++;
+    }
 }
 
